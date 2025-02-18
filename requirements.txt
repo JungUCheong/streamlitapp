@@ -5,6 +5,7 @@ ultralytics==8.0.170
 opencv-python-headless
 timm
 einops
+efficientnet_pytorch
 
 #GPU与CPU环境二选一，具体配置见PDF文档
 
