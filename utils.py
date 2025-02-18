@@ -12,7 +12,7 @@ from config import MODEL_LIST,MODEL_DIR
 
 from ultralytics import YOLO
 import streamlit as st
-help(YOLO)
+
 @st.cache_resource
 def load_model():
     """
@@ -34,10 +34,10 @@ def load_model():
         raise Exception('无模型文件')
     if pt_model_path!=None:
         if torch.cuda.is_available():
-            model=YOLO(pt_model_path,verbose=True)
+            model=YOLO(pt_model_path)
             return model
         if onnx_model_path==None:
-            model=YOLO(pt_model_path,verbose=True)
+            model=YOLO(pt_model_path)
             return model
     if onnx_model_path!=None:
         model=YOLO(onnx_model_path)
