@@ -12,7 +12,7 @@ from config import MODEL_LIST,MODEL_DIR
 
 from ultralytics import YOLO
 import streamlit as st
-
+help(YOLO)
 @st.cache_resource
 def load_model():
     """
@@ -37,10 +37,10 @@ def load_model():
             model=YOLO(pt_model_path)
             return model
         if onnx_model_path==None:
-            model=YOLO(pt_model_path, pretrained=False)
+            model=YOLO(pt_model_path)
             return model
     if onnx_model_path!=None:
-        model=YOLO(onnx_model_path, pretrained=False)
+        model=YOLO(onnx_model_path)
         return model
 def infer_image(model,image,conf,iou,is_save=False):
     '''
