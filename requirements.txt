@@ -1,6 +1,7 @@
 #python版本不强制要求，但最好为3.10
 
 streamlit==1.30.0
+opencv-python
 
 #GPU与CPU环境二选一，具体配置见PDF文档
 
