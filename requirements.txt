@@ -1,13 +1,13 @@
 #python版本不强制要求，但最好为3.10
 
 streamlit==1.30.0
+ultralytics==8.0.170
 opencv-python-headless
 timm
 
 #GPU与CPU环境二选一，具体配置见PDF文档
 
 #cpu环境(若虚拟环境中无pytorch,ultralytics底层自动依赖下载cpu版本的torch,如对项目的检测速度有要求请安装gpu版本的torch)
-ultralytics==8.0.170
 onnx
 onnxruntime==1.17.1
 
