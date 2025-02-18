@@ -5,8 +5,8 @@ streamlit==1.30.0
 #GPU与CPU环境二选一，具体配置见PDF文档
 
 #cpu环境(若虚拟环境中无pytorch,ultralytics底层自动依赖下载cpu版本的torch,如对项目的检测速度有要求请安装gpu版本的torch)
-ultralytics==8.0.170
-onnx==1.15.0
+ultralytics
+onnx
 onnxruntime==1.17.1
 
 #gpu环境(这里安装的是gpu版本的torch,请到pytorch官网复制与你的英伟达显卡驱动所支持的cuda版本对应的安装命令,下面以cuda 11.8为例给出示例命令)
