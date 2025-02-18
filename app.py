@@ -89,7 +89,7 @@ else:
     source = ("图片检测 Image Detection", "视频检测 Video Detection",'摄像头检测 Camera Detection')
     select_radio=st.sidebar.radio('检测类型 Detection Type',source)
     source_index=source.index(select_radio)
-    model=load_model(weights_only=True)
+    model=load_model()
     if source_index == 0:
         uploaded_file = st.sidebar.file_uploader(
             "上传图片 Upload Image", type=['png', 'jpeg', 'jpg'])
