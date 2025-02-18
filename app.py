@@ -23,10 +23,10 @@ unzip_file('ultralytics.zip', 'myultralytics')
 import shutil
 
 # 定义源文件夹的路径
-source_folder = 'myultralytics/ultralytics'
+source_folder = './myultralytics/ultralytics'
 
 # 定义目标文件夹的路径
-destination_folder = ''
+destination_folder = './'
 
 # 移动源文件夹到目标位置
 shutil.move(source_folder, destination_folder)
