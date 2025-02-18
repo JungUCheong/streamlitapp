@@ -31,8 +31,11 @@ source_folder = path+'/myultralytics/ultralytics'
 # 定义目标文件夹的路径
 destination_folder = path+'/'
 
-# 移动源文件夹到目标位置
-shutil.move(source_folder, destination_folder)
+try:
+    # 移动源文件夹到目标位置
+    shutil.move(source_folder, destination_folder)
+except:
+    pass
 
 from PIL import Image
 from utils import load_model,infer_image,infer_video_frame
