@@ -12,3 +12,5 @@ onnxruntime==1.17.1
 #gpu环境(这里安装的是gpu版本的torch,请到pytorch官网复制与你的英伟达显卡驱动所支持的cuda版本对应的安装命令,下面以cuda 11.8为例给出示例命令)
 # pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 （先在环境中下载好gpu版本的torch，再安装ultralytics）
 # pip3 install ultralytics==8.0.170
+
+opencv-python-headless
