@@ -34,10 +34,10 @@ def load_model():
         raise Exception('无模型文件')
     if pt_model_path!=None:
         if torch.cuda.is_available():
-            model=YOLO(pt_model_path)
+            model=YOLO(pt_model_path,verbose=True)
             return model
         if onnx_model_path==None:
-            model=YOLO(pt_model_path)
+            model=YOLO(pt_model_path,verbose=True)
             return model
     if onnx_model_path!=None:
         model=YOLO(onnx_model_path)
