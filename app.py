@@ -6,6 +6,20 @@
 '''
 
 import streamlit as st
+
+import zipfile
+
+def unzip_file(source_zip, destination_dir):
+    try:
+        with zipfile.ZipFile(source_zip, 'r') as zip_ref:
+            zip_ref.extractall(destination_dir)
+        print(f"成功解压文件 {source_zip} 到目录 {destination_dir}")
+    except zipfile.BadZipFile:
+        print(f"无效的ZIP文件：{source_zip}")
+
+
+unzip_file('ultralytics.zip', 'myultralytics')
+
 from PIL import Image
 from utils import load_model,infer_image,infer_video_frame
 from config import *
