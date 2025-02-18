@@ -37,10 +37,10 @@ def load_model():
             model=YOLO(pt_model_path)
             return model
         if onnx_model_path==None:
-            model=torch.load(pt_model_path, weights_only=False)
+            model=YOLO(pt_model_path)
             return model
     if onnx_model_path!=None:
-        model=torch.load(onnx_model_path, weights_only=False)
+        model=YOLO(onnx_model_path)
         return model
 def infer_image(model,image,conf,iou,is_save=False):
     '''
