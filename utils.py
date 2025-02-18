@@ -10,7 +10,7 @@ import torch
 from pathlib import Path
 from config import MODEL_LIST,MODEL_DIR
 
-from myultralytics.ultralytics import YOLO
+from ultralytics import YOLO
 import streamlit as st
 
 @st.cache_resource
