@@ -4,6 +4,7 @@ streamlit==1.30.0
 ultralytics==8.0.170
 opencv-python-headless
 timm
+einops
 
 #GPU与CPU环境二选一，具体配置见PDF文档
 
