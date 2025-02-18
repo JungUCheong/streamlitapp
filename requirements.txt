@@ -2,6 +2,7 @@
 
 streamlit==1.30.0
 opencv-python-headless
+timm
 
 #GPU与CPU环境二选一，具体配置见PDF文档
 
