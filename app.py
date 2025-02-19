@@ -143,6 +143,10 @@ else:
         uploaded_file = st.sidebar.file_uploader("上传视频 Upload Video", type=['mp4'])
         if uploaded_file is not None:
             st.sidebar.video(uploaded_file)
+            try:
+                os.mkdir(path+"/img_video")
+            except:
+                pass
             tfile = tempfile.NamedTemporaryFile(dir=ROOT / 'img_video')
             tfile.write(uploaded_file.read())
             vid_cap = cv2.VideoCapture(tfile.name)
