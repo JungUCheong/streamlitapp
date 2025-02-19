@@ -1,8 +1,9 @@
 #python版本不强制要求，但最好为3.10
 
 streamlit==1.30.0
+torch==2.4.1
 
-opencv-python
+opencv-python==4.10.0.84
 dill
 
 #GPU与CPU环境二选一，具体配置见PDF文档
