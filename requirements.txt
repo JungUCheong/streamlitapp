@@ -5,6 +5,7 @@ torch==2.4.1
 timm
 einops
 efficientnet_pytorch
+pywt
 
 opencv-python-headless
 dill
