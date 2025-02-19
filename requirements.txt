@@ -3,7 +3,7 @@
 streamlit==1.30.0
 torch==2.4.1
 
-opencv-python==4.10.0.84
+opencv-python-headless
 dill
 
 #GPU与CPU环境二选一，具体配置见PDF文档
