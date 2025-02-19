@@ -2,6 +2,7 @@
 
 streamlit==1.30.0
 torch==2.4.1
+timm
 
 opencv-python-headless
 dill
