@@ -61,7 +61,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 login_status = st.session_state.get('login_status', False)
 register_status=st.session_state.get('register_status', False)
 if not login_status:
-    st.markdown("<h1 style='text-align: center;'>欢迎进入西红柿外部品质检测系统</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>欢迎进入西红柿外观品质分级系统</h1>", unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center;'>Welcome to the Tomato External Quality Detection System</h2>", unsafe_allow_html=True)
     st.markdown("<h3 style='text-align: center;'>登录界面 Login Page</h3>", unsafe_allow_html=True)
     input_username = st.text_input("用户名 Username:")
@@ -87,7 +87,7 @@ if not login_status:
             st.session_state.register_status = True
             st.rerun()
 elif register_status:
-    st.markdown("<h1 style='text-align: center;'>欢迎进入西红柿外部品质检测系统</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>欢迎进入西红柿外观品质分级系统</h1>", unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center;'>Welcome to the Tomato External Quality Detection System</h2>",
                 unsafe_allow_html=True)
     st.markdown("<h3 style='text-align: center;'>注册界面 Register Page</h3>", unsafe_allow_html=True)
@@ -110,7 +110,7 @@ elif register_status:
             st.session_state.authentication=authentication
             st.rerun()
 else:
-    st.markdown("<h1 style='text-align: center;'>西红柿外部品质检测系统</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>西红柿外观品质分级测系统</h1>", unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center;'>Tomato External Quality Detection System</h2>", unsafe_allow_html=True)
     st.sidebar.header("配置面板 Configuration Panel")
     confidence = float(st.sidebar.slider(
