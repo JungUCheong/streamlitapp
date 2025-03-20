@@ -110,7 +110,7 @@ elif register_status:
             st.session_state.authentication=authentication
             st.rerun()
 else:
-    st.markdown("<h1 style='text-align: center;'>西红柿外观品质分级测系统</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>西红柿外观品质分级系统</h1>", unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center;'>Tomato External Quality Detection System</h2>", unsafe_allow_html=True)
     st.sidebar.header("配置面板 Configuration Panel")
     confidence = float(st.sidebar.slider(
